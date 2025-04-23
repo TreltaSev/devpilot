@@ -18,7 +18,8 @@
 				"title": "devpilot",
 				"width": 800,
         "decorations": false,
-				"transparent": true
+				"transparent": true,
+        "shadow": false
       }
     ],
     "security": {

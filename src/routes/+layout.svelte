@@ -18,7 +18,7 @@
 </script>
 
 <!-- Window Container (Holds Everything) -->
-<Flex.Row class="size-full bg-component-backdrop overflow-hidden rounded-xl">
+<Flex.Row class="size-full bg-component-backdrop rounded-xl overflow-hidden ">
 	 
 	<!-- Side Bar -->
 	<Flex.Col class="h-full w-12 bg-component-sidebar border-0 border-r border-depth-2" ></Flex.Col>
