@@ -1,6 +1,13 @@
 {
   "svelte.enable-ts-plugin": true,
   "cSpell.words": [
-    "Titlebar"
-  ]
+    "Titlebar",
+    "unmaximize"
+  ],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }

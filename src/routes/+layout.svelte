@@ -3,31 +3,31 @@
 	import '../app.css';
 
 	// Components
-	import { Flex, WindowControl } from '@ui';
+	import { Flex } from '@ui';
 	import { Titlebar } from '@components';
 
 	// Logic
-	import { getCurrentWindow } from "@tauri-apps/api/window"
-	import { onMount } from 'svelte';
+	import { setDeviceCtx } from '@lib/ctx';
+	import { cn } from '@lib/utils';
 
 	// Get children from props
 	let { children } = $props();
 
-
-	let maximized: boolean = $state(false);
-
+	// Reactive store for maximized state
+	const { maximized$ } = setDeviceCtx();
+	
 </script>
 
 <!-- Window Container (Holds Everything) -->
-<Flex.Row class="size-full bg-component-backdrop rounded-xl overflow-hidden ">
-	 
+<Flex.Row class={cn("size-full bg-component-backdrop overflow-hidden", $maximized$ && 'rounded-none', !$maximized$ && 'rounded-2xl')}>
 	<!-- Side Bar -->
-	<Flex.Col class="h-full w-12 bg-component-sidebar border-0 border-r border-depth-2" ></Flex.Col>
+	<Flex.Col class="h-full w-12 bg-component-sidebar border-0 border-r border-depth-2">
+	</Flex.Col>
 
 	<!-- Holds Main Content -->
 	<Flex.Col class="size-full">
 		<!-- Plane Selector -->
-		<Titlebar/>
+		<Titlebar />
 
 		<!-- Plane Quick Access -->
 		<Flex.Row class="w-full h-12 border-0 border-b border-depth-2"></Flex.Row>
@@ -38,6 +38,4 @@
 			{@render children?.()}
 		</Flex.Row>
 	</Flex.Col>
-
-	
 </Flex.Row>
