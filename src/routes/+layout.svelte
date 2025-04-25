@@ -4,6 +4,7 @@
 
 	// Components
 	import { Flex, WindowControl } from '@ui';
+	import { Titlebar } from '@components';
 
 	// Logic
 	import { getCurrentWindow } from "@tauri-apps/api/window"
@@ -26,7 +27,7 @@
 	<!-- Holds Main Content -->
 	<Flex.Col class="size-full">
 		<!-- Plane Selector -->
-		<Flex.Row class="w-full h-12 border-0 border-b border-depth-2" data-tauri-drag-region></Flex.Row>
+		<Titlebar/>
 
 		<!-- Plane Quick Access -->
 		<Flex.Row class="w-full h-12 border-0 border-b border-depth-2"></Flex.Row>
