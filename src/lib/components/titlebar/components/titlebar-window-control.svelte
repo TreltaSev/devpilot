@@ -7,7 +7,7 @@
 	let {
 		children,
 		class: className,
-		windowControlClass = $bindable('flex flex-row items-center justify-center h-full aspect-square transition-all ease-in-out'),
+		windowControlClass = $bindable('flex flex-row items-center justify-center h-full aspect-square transition-all ease-in-out shrink-0'),
 		...rest
 	}: WindowControlProps = $props();
 

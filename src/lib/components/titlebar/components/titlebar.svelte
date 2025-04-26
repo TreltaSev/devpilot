@@ -48,14 +48,14 @@
 </script>
 
 <Flex.Row
-	class={cn('w-full h-12 border-0 border-b border-depth-2', className)}
+	class={cn('w-full h-12 border-0 border-b border-depth-2 shrink-0', className)}
 	data-tauri-drag-region
 >
 	<!-- Render children if provided -->
 	{@render children?.()}
 
 	<!-- Window Controls -->
-	<Flex.Row class="ml-auto [&_svg]:size-5">
+	<Flex.Row class="ml-auto shrink-0 [&_svg]:size-5 [&_svg]:shrink-0">
 		<!-- Minimize Button -->
 		<TitlebarWindowControl onclick={minimize}>
 			<IconMinimize />
