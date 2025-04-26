@@ -30,7 +30,7 @@
 		<Titlebar />
 
 		<!-- Plane Quick Access -->
-		<Flex.Row class="w-full h-12 border-0 border-b border-depth-2"></Flex.Row>
+		<Flex.Row class="w-full h-12 shrink-0 border-0 border-b border-depth-2"></Flex.Row>
 
 		<!-- Plane Sections -->
 		<Flex.Row class="size-full">
