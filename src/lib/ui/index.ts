@@ -1,3 +1,5 @@
 export * as Flex from "./flex"
+export { default as Frame } from "./frame/components/frame.svelte"
 export { default as Separator } from "./separator/components/separator.svelte"
+export * as Shape from "./shape"
 export * as WindowControl from "./window-control"

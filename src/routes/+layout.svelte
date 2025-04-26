@@ -4,7 +4,7 @@
 
 	// Components
 	import { Flex } from '@ui';
-	import { Titlebar } from '@components';
+	import { Sidebar, Titlebar } from '@components';
 
 	// Logic
 	import { setDeviceCtx } from '@lib/ctx';
@@ -21,8 +21,7 @@
 <!-- Window Container (Holds Everything) -->
 <Flex.Row class={cn("size-full bg-component-backdrop overflow-hidden", $maximized$ && 'rounded-none', !$maximized$ && 'rounded-none')}>
 	<!-- Side Bar -->
-	<Flex.Col class="h-full w-12 bg-component-sidebar border-0 border-r border-depth-2">
-	</Flex.Col>
+	<Sidebar/>
 
 	<!-- Holds Main Content -->
 	<Flex.Col class="size-full">
