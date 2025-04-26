@@ -19,7 +19,7 @@
 </script>
 
 <!-- Window Container (Holds Everything) -->
-<Flex.Row class={cn("size-full bg-component-backdrop overflow-hidden", $maximized$ && 'rounded-none', !$maximized$ && 'rounded-2xl')}>
+<Flex.Row class={cn("size-full bg-component-backdrop overflow-hidden", $maximized$ && 'rounded-none', !$maximized$ && 'rounded-none')}>
 	<!-- Side Bar -->
 	<Flex.Col class="h-full w-12 bg-component-sidebar border-0 border-r border-depth-2">
 	</Flex.Col>

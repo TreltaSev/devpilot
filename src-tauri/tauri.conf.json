@@ -19,7 +19,7 @@
 				"width": 800,
         "decorations": false,
 				"transparent": true,
-        "shadow": false
+        "shadow": true
       }
     ],
     "security": {
